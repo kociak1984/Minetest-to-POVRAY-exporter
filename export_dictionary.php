@@ -38,8 +38,8 @@ $countDiv=(int)($count/$divider);
 for($i=0;$i<=$countDiv;$i++)
 {
 	// Indices for the loop to use
-	$start=$i*100;
-	$end=$start+100;
+	$start=$i*$divider;
+	$end=$start+$divider;
 	// Eyecandy line!
 	print("Reading chunks ".$start." to ".$end." of ".$count." total\n".count($dictionary)." entries so far...\n");
 	// Neat way of doing things. Read $divider number of chunks.
