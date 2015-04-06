@@ -10,12 +10,7 @@ Make sure to back up those after you've done some changes to them!
 include('mapreader.php'); // include map-parsing functions
 
 // BEGIN CONFIG HERE
-$mysqlConn=array(); // mysql config data here
-$mysqlConn['host']="dbhost here";
-$mysqlConn['user']="dbuser here";
-$mysqlConn["pass"]="dbpass here";
-$mysqlConn['base']="dbname here";
-$mysqlConn['table']="blocks"; // table named the same as Minetest's one
+include('config.php');
 
 $divider=100; // How many chunks to fetch at a time? Tinker with this to improve performance.
 // END CONFIG HERE
